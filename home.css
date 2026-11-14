@@ -1,0 +1,24 @@
+.portada{
+    text-align: center;
+    background-color: #e8d5bd;
+    border-radius: 16px;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.precio{
+    color: #b5651d;
+    font-weight: bold;
+}

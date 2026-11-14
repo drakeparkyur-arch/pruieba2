@@ -1,0 +1,48 @@
+.filtros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filtros button{
+    background-color: #fff;
+    color: #3b2a20;
+    border: 1px solid #b5651d;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filtros button.activo{
+    background-color: #b5651d;
+    color: #fff;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta{
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.etiqueta{
+    font-size: 12px;
+    background-color: #e8d5bd;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.tarjeta h3{
+    margin-top: 10px;
+}
+
+.precio{
+    color: #b5651d;
+    font-weight: bold;
+}

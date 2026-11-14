@@ -1,0 +1,19 @@
+<h1>Contáctanos</h1>
+<p>Escríbenos y te responderemos a la brevedad. Horario: lunes a sábado, de 8:00 a 20:00.</p>
+
+<form #formulario="ngForm" (ngSubmit)="enviar()">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" [(ngModel)]="nombre" required>
+
+    <label for="correo">Correo</label>
+    <input id="correo" name="correo" type="email" [(ngModel)]="correo" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="4" [(ngModel)]="mensaje" required></textarea>
+
+    <button class="boton" type="submit" [disabled]="formulario.invalid">Enviar</button>
+</form>
+
+@if (enviado()) {
+    <p class="ok">¡Gracias! Recibimos tu mensaje.</p>
+}

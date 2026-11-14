@@ -1,0 +1,18 @@
+<section class="portada">
+    <h1>Café de altura, hecho con cariño</h1>
+    <p>Granos peruanos tostados cada semana y postres artesanales para acompañar tu día.</p>
+    <a class="boton" routerLink="/product">Ver nuestra carta</a>
+</section>
+
+<section>
+    <h2>Lo más pedido</h2>
+    <div class="tarjetas">
+        @for (p of destacados; track p.id) {
+            <article class="tarjeta">
+                <h3>{{ p.nombre }}</h3>
+                <p>{{ p.descripcion }}</p>
+                <p class="precio">S/ {{ p.precio | number:'1.2-2' }}</p>
+            </article>
+        }
+    </div>
+</section>

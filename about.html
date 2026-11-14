@@ -1,0 +1,13 @@
+<h1>Nosotros</h1>
+<p>Café Andino nació en Lima con una idea simple: que tomar un buen café peruano sea un momento tranquilo y agradable.</p>
+<p>Desde nuestra apertura servimos bebidas calientes y frías, además de postres hechos a diario.</p>
+
+<h2>Lo que nos define</h2>
+<div class="valores">
+    @for (v of valores; track v.titulo) {
+        <div class="valor">
+            <h3>{{ v.titulo }}</h3>
+            <p>{{ v.texto }}</p>
+        </div>
+    }
+</div>
